@@ -1,0 +1,129 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "nameFW1": {
+      "value": "FW-1"
+    },
+    "nameFW2": {
+      "value": "FW-2"
+    },
+    "adminUsername": {
+      "value": "paloalto"
+    },
+    "adminPassword": {
+      "value": null
+    },
+    "licenseType": {
+      "value": null
+    },
+    "vmSize": {
+      "value": "Standard_DS3_v2"
+    },
+    "managedDiskType": {
+      "value": "Standard_LRS"
+    },
+    "availabilitySetOption": {
+      "value": null
+    },
+    "availabilitySetName": {
+      "value": "FW-AS"
+    },
+    "bootstrapStorageAccount": {
+      "value": "None"
+    },
+    "bootstrapStorageAccountAccessKey": {
+      "value": "None"
+    },
+    "bootstrapStorageAccountFileShare": {
+      "value": "None"
+    },
+    "bootstrapStorageShareDirectory": {
+      "value": "None"
+    },
+    "vnetName": {
+      "value": "fwVNET"
+    },
+    "vnetPrefix": {
+      "value": "10.0.0.0/16"
+    },
+    "mgmtSubnetName": {
+      "value": "mgmt-subnet"
+    },
+    "untrustSubnetName": {
+      "value": "untrust-subnet"
+    },
+    "trustSubnetName": {
+      "value": "trust-subnet"
+    },
+	"DMZSubnetName": {
+      "value": "DMZ-subnet"
+    },
+    "internalLoadBalancerSubnetName": {
+      "value": "lb-subnet"
+    },
+    "mgmtSubnetPrefix": {
+      "value": "10.0.0.0/24"
+    },
+    "untrustSubnetPrefix": {
+      "value": "10.0.1.0/24"
+    },
+    "trustSubnetPrefix": {
+      "value": "10.0.2.0/24"
+    },
+	"DMZSubnetPrefix": {
+      "value": "10.0.3.0/24"
+    },
+    "internalLoadBalancerSubnetPrefix": {
+      "value": "10.0.4.0/24"
+    },
+    "mgmtIpFW1": {
+      "value": "10.0.0.4"
+    },
+    "untrustIpFW1": {
+      "value": "10.0.1.4"
+    },
+    "trustIpFW1": {
+      "value": "10.0.2.4"
+    },
+	"DMZIpFW1": {
+      "value": "10.0.3.4"
+    },
+    "mgmtIpFW2": {
+      "value": "10.0.0.5"
+    },
+    "untrustIpFW2": {
+      "value": "10.0.1.5"
+    },
+    "trustIpFW2": {
+      "value": "10.0.2.5"
+    },
+	"DMZIpFW2": {
+      "value": "10.0.3.5"
+    },
+    "applyPublicIpToMgmtNic": {
+      "value": null
+    },
+    "applyPublicIpToUntrustNic": {
+      "value": null
+    },
+    "mgmtNicNsgName": {
+      "value": "mgmt-nsg"
+    },
+    "dataNicNsgName": {
+      "value": "data-nsg"
+    },
+    "mgmtNsgSourceIpAddress": {
+      "value": "0.0.0.0/0"
+    },
+    "internalLoadBalancerName": {
+      "value": "internal-lb"
+    },
+    "internalLoadBalancerIp": {
+      "value": "10.0.4.100"
+    },
+    "loadBalancerHealthProbeTcpPort": {
+      "value": "22"
+    }
+  }
+}
