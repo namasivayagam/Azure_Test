@@ -783,6 +783,7 @@
                                             "properties": {
                                                 "primary": false
                                             }
+                                        },
 										{
                                             "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('FW1DMZNicName'))]",
                                             "properties": {
@@ -927,9 +928,8 @@
                                             ]
                                         }
                                     }
-								
-								}
-							
+                                ]
+							}
 							},
 							{
                             "apiVersion": "2018-06-01",
@@ -1022,12 +1022,13 @@
                                             "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('FW2TrustNicName'))]",
                                             "properties": {
                                                 "primary": false
-                                            },
+                                            }
+                                        },
 										{
                                             "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('FW2DMZNicName'))]",
                                             "properties": {
                                                 "primary": false
-                                            }	
+                                            }
                                         }
                                     ]
                                 }
